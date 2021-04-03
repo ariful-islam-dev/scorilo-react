@@ -1,4 +1,7 @@
 import React from 'react'
+import Banner from '../Components/Banner'
+import Navigation from '../Components/Navigation'
+import Header from '../Components/Navigation'
 
 function Home() {
     return (
@@ -6,40 +9,8 @@ function Home() {
             {/* Header Area */}
             <header className="item header margin-top-0">
                 <div className="wrapper">
-                    <nav role="navigation" className="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
-                        <div className="container">
-                            <div className="navbar-header">
-                                <button data-target="#navbar-collapse-02" data-toggle="collapse" className="navbar-toggle" type="button">
-                                    <i className="fa fa-bars"></i>
-                                    <span className="sr-only">Toggle navigation</span>
-                                </button>
-                                <a href="index.html" className="navbar-brand brand"> SCORILO </a>
-                            </div>
-                            <div id="navbar-collapse-02" className="collapse navbar-collapse">
-                                <ul className="nav navbar-nav navbar-right">
-                                    <li className="propClone"><a href="index.html">Home</a></li>
-                                    <li className="propClone"><a href="shop.html">Shop</a></li>
-                                    <li className="propClone"><a href="product.html">Product</a></li>
-                                    <li className="propClone"><a href="checkout.html">Checkout</a></li>
-                                    <li className="propClone"><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12 text-center">
-                                <div className="text-homeimage">
-                                    <div className="maintext-image" data-scrollreveal="enter top over 1.5s after 0.1s">
-                                        Increase Digital Sales
-					</div>
-                                    <div className="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.3s">
-                                        Boost revenue with Scorilo
-					</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Navigation />
+                    <Banner title="Increase Digital Sales" subTitle="Boost revenue with Scorilo" />
                 </div>
             </header>
             {/* Header End */}
