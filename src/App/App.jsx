@@ -4,6 +4,7 @@ import '../assets/css/bootstrap.min.css'
 import '../assets/css/style.css'
 import { Helmet } from 'react-helmet';
 import Shop from '../Pages/Shop';
+import AppRouter from './Router';
 
 function App() {
   return (
@@ -15,12 +16,9 @@ function App() {
         <script src="../assets/js/jquery-.js"></script>
         <script src="../assets/js/bootstrap.min.js"></script>
         <script src="../assets/js/anim.js"></script>
-        <script type="text/javascript" src="../assets/js/custom.js">
-          
-      </script>
+        <script type="text/javascript" src="../assets/js/custom.js"></script>
       </Helmet>
-      <Home />
-      <Shop/>
+      <AppRouter/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+(document).ready(function ($) {
     $('.fadeshop').hover(
       function () {
         $(this).find('.captionshop').fadeIn(150)
