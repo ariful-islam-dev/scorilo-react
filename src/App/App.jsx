@@ -3,7 +3,6 @@ import Home from '../Pages/Home';
 import '../assets/css/bootstrap.min.css'
 import '../assets/css/style.css'
 import { Helmet } from 'react-helmet';
-import $ from "jquery";
 
 function App() {
   return (

@@ -3,6 +3,11 @@ import Banner from '../Components/Banner'
 import Navigation from '../Components/Navigation'
 import Header from '../Components/Navigation'
 
+import product1 from '../assets/images/product1.jpg';
+import product2 from '../assets/images/product2.jpg';
+import product3 from '../assets/images/product3.png';
+import Footer from '../Components/Footer';
+
 function Home() {
     return (
         <div>
@@ -74,14 +79,14 @@ function Home() {
                                             This is a short excerpt to generally describe what the item is about.
                                     </p>
                                         <p>
-                                            <a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
-                                            <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
+                                            <a href="/" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
+                                            <a href="/" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
                                         </p>
                                     </div>
-                                    <span className="maxproduct"><img src="images/product1-1.jpg" alt="" /></span>
+                                    <span className="maxproduct"><img src={product1} alt="" /></span>
                                 </div>
                                 <div className="product-details">
-                                    <a href="#">
+                                    <a href="/">
                                         <h1>Calypso Theme</h1>
                                     </a>
                                     <span className="price">
@@ -99,14 +104,14 @@ function Home() {
                                             This is a short excerpt to generally describe what the item is about.
                                     </p>
                                         <p>
-                                            <a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
-                                            <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
+                                            <a href="/" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
+                                            <a href="/" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
                                         </p>
                                     </div>
-                                    <span className="maxproduct"><img src="images/product2.jpg" alt="" /></span>
+                                    <span className="maxproduct"><img src={product2} alt="" /></span>
                                 </div>
                                 <div className="product-details">
-                                    <a href="#">
+                                    <a href="/">
                                         <h1>FastSell Theme</h1>
                                     </a>
                                     <span className="price">
@@ -124,14 +129,14 @@ function Home() {
                                             This is a short excerpt to generally describe what the item is about.
                                     </p>
                                         <p>
-                                            <a href="#" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
-                                            <a href="#" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
+                                            <a href="/" className="learn-more detailslearn"><i className="fa fa-shopping-cart"></i> Purchase</a>
+                                            <a href="/" className="learn-more detailslearn"><i className="fa fa-link"></i> Details</a>
                                         </p>
                                     </div>
-                                    <span className="maxproduct"><img src="images/product2-3.jpg" alt="" /></span>
+                                    <span className="maxproduct"><img src={product3} alt="" /></span>
                                 </div>
                                 <div className="product-details">
-                                    <a href="#">
+                                    <a href="/">
                                         <h1>Biscaya Theme</h1>
                                     </a>
                                     <span className="price">
@@ -230,26 +235,7 @@ function Home() {
                 </div>
             </section>
             {/* Footer  */}
-            <div className="footer text-center">
-                <div className="container">
-                    <div className="row">
-                        <p className="footernote">
-                            Connect with Scorilo
-			</p>
-                        <ul className="social-iconsfooter">
-                            <li><a href="#"><i className="fa fa-phone"></i></a></li>
-                            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i className="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
-                        </ul>
-                        <p>
-                            &copy; 2017 Your Website Name<br />
-				Scorilo - Free template by <a href="https://www.wowthemes.net/">WowThemesNet</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <Footer/>
 
         </div>
     )
