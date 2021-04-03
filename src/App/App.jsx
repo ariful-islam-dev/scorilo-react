@@ -3,12 +3,13 @@ import Home from '../Pages/Home';
 import '../assets/css/bootstrap.min.css'
 import '../assets/css/style.css'
 import { Helmet } from 'react-helmet';
+import Shop from '../Pages/Shop';
 
 function App() {
   return (
     <div className="App">
       <Helmet>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+       
         <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet" />
         <script src="../assets/js/jquery-.js"></script>
@@ -19,6 +20,7 @@ function App() {
       </script>
       </Helmet>
       <Home />
+      <Shop/>
     </div>
   );
 }
